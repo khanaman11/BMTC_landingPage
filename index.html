@@ -25,11 +25,11 @@
             </div>
             <div class="d-flex align-items-center">
                 <nav class="d-none d-md-flex align-items-center">
-                    <a href="#" class="nav-link active-link">About BMTC</a>
-                    <a href="#" class="nav-link">Booking Features</a>
-                    <a href="#" class="nav-link">Benefits</a>
-                    <a href="#" class="nav-link">Our Clients</a>
-                    <a href="#" class="nav-link">About Testpan</a>
+                    <a href="#heroSection" class="nav-link active-link">About BMTC</a>
+                    <a href="#bookingSection" class="nav-link">Booking Features</a>
+                    <a href="#benefitSection" class="nav-link">Benefits</a>
+                    <a href="#clientSection" class="nav-link">Our Clients</a>
+                    <a href="#testpanSection" class="nav-link">About Testpan</a>
 
                     <!-- Dropdown for Get In Touch -->
                     <div class="dropdown hover-dropdown">
@@ -38,8 +38,8 @@
                             Get In Touch
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="getInTouchDropdown">
-                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                            <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            <li><a class="dropdown-item" href="#contactSection">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#FAQsection">FAQs</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -81,7 +81,7 @@
         <!-- Hero section end-->
 
         <!-- About section start -->
-        <section class="about-section pt-5">
+        <section class="about-section" id="heroSection">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Left Image -->
@@ -91,7 +91,7 @@
 
                     <!-- Right Content -->
                     <div class="col-md-6">
-                        <p class="about-label mb-2">ABOUT BMTC</p>
+                        <p class="about-label  horizental-line mb-2">ABOUT BMTC</p>
                         <h2 class="about-title mb-3">App-enabled examination center booking and verification</h2>
                         <p class="about-text">
                             BookMyTestCenter (BMTC) is a product of Testpan India Pvt Ltd, a trusted global provider of
@@ -135,9 +135,9 @@
         <!-- Stats section end -->
 
         <!-- client-section start -->
-        <section class="client-section">
+        <section class="client-section" id="clientSection">
             <div class="container">
-                <p class="about-label mb-2">PARTNERS</p>
+                <p class="about-label mb-2 horizental-line">PARTNERS</p>
                 <h4>Our Esteemed Partner Brands</h4>
                 <div class="logo-carousel">
                     <div class="logo-track">
@@ -169,12 +169,12 @@
         <!-- client-section end -->
 
         <!-- Booking section start -->
-        <section class="booking-section">
+        <section class="booking-section" id="bookingSection">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Left Column -->
                     <div class="col-lg-6">
-                        <div class="subtitle">Web Booking Features</div>
+                        <div class="subtitle horizental-line">Web Booking Features</div>
                         <h2 class="feature-title">Book the Examination Center <br>of Your Choice</h2>
                         <ul class="feature-list">
                             <li>
@@ -212,11 +212,13 @@
 
         <!-- App-feature-section -->
         <section class="feature-section">
-            <h5>APP BOOKING FEATURES</h5>
+            <h5 class="horizental-line">APP BOOKING FEATURES</h5>
             <h2>Connecting All Your Daily Payment<br />Needs Easily With Bestkit</h2>
             <div class="container">
                 <div class="row app-features-row">
-                    <div class="col-md-4">
+
+                    <!-- Left Feature Cards -->
+                    <div class="col-md-4 feature-col">
                         <div class="feature-box">
                             <h6><img src="https://img.icons8.com/color/30/settings--v1.png" /> Manage Examination
                                 Centers</h6>
@@ -228,11 +230,13 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <!-- Center Phone Image -->
+                    <div class="col-md-4 d-flex justify-content-center align-items-center feature-col">
                         <img src="./assete/app-booking-img.png" alt="Phone" class="phone-img">
                     </div>
 
-                    <div class="col-md-4">
+                    <!-- Right Feature Cards -->
+                    <div class="col-md-4 feature-col">
                         <div class="feature-box">
                             <h6><img src="https://img.icons8.com/color/30/alarm.png" /> Real Time Notifications</h6>
                             <p>Real-time availability and confirmation of the examination center</p>
@@ -243,16 +247,17 @@
                                 industry trends etc.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
         <!-- App-feature-section -->
 
         <!-- All-banifits-section -->
-        <section class="benefits-section">
+        <section class="benefits-section" id="benefitSection">
             <div class="container">
                 <div class="benefits-title">
-                    <h6>All Benefits</h6>
+                    <h6 class="horizental-line">All Benefits</h6>
                     <h2>Book with BMTC for Multiple Benefits</h2>
                 </div>
 
@@ -337,10 +342,10 @@
         <!-- video-section end -->
 
         <!-- about-testpan-section -->
-        <div class="about-testpan-section py-5">
+        <div class="about-testpan-section" id="testpanSection">
             <div class="container">
-                <div class="section-heading">
-                    <h6>ABOUT TESTPAN US</h6>
+                <div class="testpan-heading">
+                    <h6 class="horizental-line">ABOUT TESTPAN US</h6>
                     <h2>About Testpan India</h2>
                 </div>
 
@@ -415,10 +420,10 @@
         <!-- Count-section-end -->
 
         <!-- Contact-us-section -->
-        <section class="contact-section">
+        <section class="contact-section" id="contactSection">
             <div class="container">
                 <div class="contact-heading">
-                    <h6>Connect With Us</h6>
+                    <h6 class="horizental-line">Connect With Us</h6>
                     <h2>Contact Us</h2>
                 </div>
                 <div class="row align-items-center g-4">
@@ -466,16 +471,16 @@
         <!-- Contact-us-sectin -->
 
         <!-- FAQ section start -->
-        <section class="faq-section py-5 bg-light">
+        <section class="faq-section bg-light" id="FAQsection">
             <div class="container">
                 <div class="row">
                     <!-- Left Section -->
                     <div class="col-lg-4 faq-left">
-                        <h6>FAQ</h6>
+                        <h6 class="horizental-line">FAQ</h6>
                         <h2>Frequently Asked Questions</h2>
                         <p>Here are some of the common questions we get asked. If you don't see your question here, feel
                             free to contact us.</p>
-                        <a href="#" class="btn btn-success">Contact Us</a>
+                        <a href="#contactSection" class="btn btn-success">Contact Us</a>
                     </div>
 
                     <!-- Right Section (Accordion) -->
