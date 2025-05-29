@@ -24,16 +24,26 @@ let circleX = 0, circleY = 0;
 document.addEventListener('mousemove', function (e) {
   mouseX = e.clientX;
   mouseY = e.clientY;
+
+  // Scale effect when moving fast
+  circle.style.transform = 'translate(-50%, -50%) scale(1.3)';
+
+  // Reset scale back after a short delay
+  clearTimeout(circle.timeoutId);
+  circle.timeoutId = setTimeout(() => {
+    circle.style.transform = 'translate(-50%, -50%) scale(1)';
+  }, 100);
 });
 
 function animate() {
-  circleX += (mouseX - circleX) * 0.1;  // adjust 0.1 for smoothness
-  circleY += (mouseY - circleY) * 0.1;
+  circleX += (mouseX - circleX) * 0.2;  // smoother
+  circleY += (mouseY - circleY) * 0.2;
   circle.style.top = `${circleY}px`;
   circle.style.left = `${circleX}px`;
   requestAnimationFrame(animate);
 }
 
 animate();
+
 
 // moving circle script end
