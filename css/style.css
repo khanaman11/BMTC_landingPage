@@ -118,7 +118,7 @@
    /* Increased height */
    position: relative;
    overflow: hidden;
-   min-height: 450px;
+   height: 100vh;
    /* Ensures enough space for images */
  }
 
