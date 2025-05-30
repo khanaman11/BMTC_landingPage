@@ -150,11 +150,11 @@
 
  .hero-phone {
    width: 100%;
-   max-width: 480px;
+   /* max-width: 480px; */
    position: relative;
    z-index: 1;
    top: 0px;
-   left: 100px;
+   left: 50px;
    /* Increased to move phone down */
  }
 
