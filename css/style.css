@@ -114,7 +114,7 @@
    ;
 
    color: white;
-   padding: 50px 0;
+   padding: 20px 0;
    /* Increased height */
    position: relative;
    overflow: hidden;
@@ -153,7 +153,7 @@
    max-width: 480px;
    position: relative;
    z-index: 1;
-   top: 103px;
+   top: 0px;
    left: 100px;
    /* Increased to move phone down */
  }
