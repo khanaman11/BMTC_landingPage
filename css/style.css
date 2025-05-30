@@ -11,6 +11,10 @@
    font-style: normal;
  }
 
+ h2{
+  font-size: 36px !important;
+ }
+
 
  /* moving circle style start */
  .cursor-circle {
@@ -110,7 +114,7 @@
    ;
 
    color: white;
-   padding: 86px 0;
+   padding: 103px 0;
    /* Increased height */
    position: relative;
    overflow: hidden;
@@ -156,7 +160,7 @@
 
  .hero-inset-img {
    position: absolute;
-   top: -25px;
+   top: -50px;
    /* Adjusted to go higher inside the phone */
    left: 50%;
    transform: translateX(-50%);
@@ -253,7 +257,7 @@
 
 
  .about-title {
-   font-size: 24px;
+   font-size: 36px;
    font-weight: 700;
    color: #222D39 !important;
  }
@@ -353,7 +357,7 @@
  }
 
  .feature-title {
-   font-size: 32px;
+   font-size: 36px;
    font-weight: 600;
    margin-bottom: 30px;
  }
