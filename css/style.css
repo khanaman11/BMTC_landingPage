@@ -11,8 +11,8 @@
    font-style: normal;
  }
 
- h2{
-  font-size: 36px !important;
+ h2 {
+   font-size: 36px !important;
  }
 
 
@@ -31,6 +31,7 @@
    transition: transform 0.2s ease-out, background 0.3s;
    box-shadow: 0 0 10px rgba(0, 183, 255, 0.6), 0 0 20px rgba(0, 183, 255, 0.4);
  }
+
  /* moving circle style end */
 
  /* Header */
@@ -109,85 +110,89 @@
 
  /* hero section start */
  .hero-section {
-  background: radial-gradient(circle at center, #8EAF39 10%, #3CA5DF 50%, #357FB7 90%);
-  color: white;
-  padding: 60px 0;
-  position: relative;
-  overflow: hidden;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
+   /* background: radial-gradient(circle at center, #8EAF39 10%, #3CA5DF 50%, #357FB7 90%); */
+   background:radial-gradient(96.67% 157.02% at 96.67% 105.65%, #8EAF39 5.53%, #3CA5DF 54.02%, #357FB7 88.68%)
+     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+   ;
 
-.hero-content h1 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
+   color: white;
+   padding: 60px 0;
+   position: relative;
+   overflow: hidden;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+ }
 
-.hero-content p {
-  font-size: 18px;
-  font-weight: 400;
-  color: #d2e5ff;
-}
+ .hero-content h1 {
+   font-size: 42px;
+   font-weight: 700;
+   margin-bottom: 15px;
+ }
 
-.store-buttons img {
-  height: 45px;
-  margin-right: 10px;
-}
+ .hero-content p {
+   font-size: 18px;
+   font-weight: 400;
+   color: #d2e5ff;
+ }
 
-.hero-img-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+ .store-buttons img {
+   height: 45px;
+   margin-right: 10px;
+ }
 
-.hero-phone {
-  width: 100%;
-  max-width: 380px;
-}
+ .hero-img-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
 
-@media (min-width: 992px) {
-  .hero-section .row {
-    display: flex;
-    align-items: center;
-  }
+ .hero-phone {
+   width: 100%;
+   max-width: 380px;
+ }
 
-  .hero-content h1 {
-    font-size: 52px;
-  }
+ @media (min-width: 992px) {
+   .hero-section .row {
+     display: flex;
+     align-items: center;
+   }
 
-  .hero-content p {
-    font-size: 20px;
-  }
+   .hero-content h1 {
+     font-size: 52px;
+   }
 
-  .hero-img-wrapper {
-    justify-content: flex-end;
-  }
-}
+   .hero-content p {
+     font-size: 20px;
+   }
 
-@media (max-width: 767.98px) {
-  .hero-section {
-    padding: 40px 20px;
-    text-align: center;
-  }
+   .hero-img-wrapper {
+     justify-content: flex-end;
+   }
+ }
 
-  .hero-content h1 {
-    font-size: 36px;
-  }
+ @media (max-width: 767.98px) {
+   .hero-section {
+     padding: 40px 20px;
+     text-align: center;
+   }
 
-  .hero-content p {
-    font-size: 16px;
-  }
+   .hero-content h1 {
+     font-size: 36px;
+   }
 
-  .store-buttons img {
-    margin-bottom: 10px;
-  }
+   .hero-content p {
+     font-size: 16px;
+   }
 
-  .hero-img-wrapper {
-    margin-top: 30px;
-  }
-}
+   .store-buttons img {
+     margin-bottom: 10px;
+   }
+
+   .hero-img-wrapper {
+     margin-top: 30px;
+   }
+ }
 
  /* Hero section end */
 
