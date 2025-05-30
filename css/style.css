@@ -119,7 +119,7 @@
  }
 
  .hero-content h1 {
-   font-size: 50px !important;
+   font-size: 52px !important;
    font-weight: 700;
    margin-bottom: 15px;
  }
@@ -150,16 +150,17 @@
    position: relative;
    z-index: 1;
    top: 103px;
+   left: 100px;
    /* Increased to move phone down */
  }
 
  .hero-inset-img {
    position: absolute;
-   top: 0px;
+   top: -25px;
    /* Adjusted to go higher inside the phone */
-   left: 34%;
+   left: 50%;
    transform: translateX(-50%);
-   width: 300px;
+   width: 350px;
    height: auto;
    border-radius: 10px;
    z-index: 2;
@@ -192,9 +193,6 @@
      transform: translateX(-50%);
    }
  }
-
-
-
 
 
  /* Hero section end */
