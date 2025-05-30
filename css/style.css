@@ -109,95 +109,85 @@
 
  /* hero section start */
  .hero-section {
-   background: radial-gradient(96.67% 157.02% at 96.67% 105.65%, #8EAF39 5.53%, #3CA5DF 54.02%, #357FB7 88.68%)
-     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-   ;
+  background: radial-gradient(circle at center, #8EAF39 10%, #3CA5DF 50%, #357FB7 90%);
+  color: white;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
-   color: white;
-   padding: 20px 0;
-   /* Increased height */
-   position: relative;
-   overflow: hidden;
-   height: 100vh;
-   /* Ensures enough space for images */
- }
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
 
- .hero-content h1 {
-   font-size: 52px !important;
-   font-weight: 700;
-   margin-bottom: 15px;
- }
+.hero-content p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #d2e5ff;
+}
 
- .hero-content p {
-   font-size: 18px;
-   font-weight: 400;
-   color: #d2e5ff;
- }
+.store-buttons img {
+  height: 45px;
+  margin-right: 10px;
+}
 
- .store-buttons img {
-   height: 45px;
-   margin-right: 10px;
- }
+.hero-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
- .hero-img-wrapper {
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: flex-end;
-   height: 100%;
-   margin-top: 30px;
- }
+.hero-phone {
+  width: 100%;
+  max-width: 380px;
+}
 
- .hero-phone {
-   width: 100%;
-   /* max-width: 480px; */
-   position: relative;
-   z-index: 1;
-   top: 0px;
-   left: 50px;
-   /* Increased to move phone down */
- }
+@media (min-width: 992px) {
+  .hero-section .row {
+    display: flex;
+    align-items: center;
+  }
 
- .hero-inset-img {
-   position: absolute;
-   top: -50px;
-   /* Adjusted to go higher inside the phone */
-   left: 50%;
-   transform: translateX(-50%);
-   width: 350px;
-   height: auto;
-   border-radius: 10px;
-   z-index: 2;
- }
+  .hero-content h1 {
+    font-size: 52px;
+  }
 
- @media (min-width: 768px) {
-   .hero-content h1 {
-     font-size: 42px;
-   }
+  .hero-content p {
+    font-size: 20px;
+  }
 
-   .hero-content p {
-     font-size: 20px;
-   }
+  .hero-img-wrapper {
+    justify-content: flex-end;
+  }
+}
 
-   .hero-img-wrapper {
-     justify-content: flex-end;
-   }
+@media (max-width: 767.98px) {
+  .hero-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
 
- }
+  .hero-content h1 {
+    font-size: 36px;
+  }
 
- @media (max-width: 767.98px) {
-   .hero-img-wrapper {
-     justify-content: center !important;
-     align-items: center !important;
-     text-align: center;
-   }
+  .hero-content p {
+    font-size: 16px;
+  }
 
-   .hero-inset-img {
-     left: 50%;
-     transform: translateX(-50%);
-   }
- }
+  .store-buttons img {
+    margin-bottom: 10px;
+  }
 
+  .hero-img-wrapper {
+    margin-top: 30px;
+  }
+}
 
  /* Hero section end */
 
