@@ -160,7 +160,7 @@
 
 
 /* ✅ For laptop-size screens: reduce font + image size */
-@media (min-width: 1024px) and (max-width: 1399.98px) {
+@media (min-width: 1024px) and (max-width: 1499.98px) {
   .hero-content h1 {
     font-size: 52px;
   }
