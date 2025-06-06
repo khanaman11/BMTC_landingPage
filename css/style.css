@@ -197,7 +197,7 @@
   }
 
   .hero-phone {
-    transform: translateY(200px); /* 👈 Push image down so bottom gets cropped */
+    transform: translateY(0px); /* 👈 Push image down so bottom gets cropped */
   }
 }
 
