@@ -121,18 +121,20 @@
 }
 
 .hero-content h1 {
-  font-size: 52px;
+  font-size: clamp(36px, 4vw, 72px); /* text grows on big screens */
   font-weight: 700;
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .hero-content p {
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 28px); /* paragraph grows too */
   color: #d2e5ff;
+  line-height: 1.5;
 }
 
 .store-buttons img {
-  height: 50px;
+  height: clamp(40px, 5vw, 60px); /* button icons grow */
   margin-right: 10px;
 }
 
@@ -144,13 +146,17 @@
 
 .hero-phone {
   width: 100%;
-  max-width: 400px;
+  max-width: clamp(280px, 40vw, 520px); /* image grows on big screen */
 }
 
-/* Large screens */
-@media (min-width: 1200px) {
+/* Extra large screens */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+
   .hero-content {
-    max-width: 500px;
+    max-width: 600px;
   }
 
   .hero-img-wrapper {
@@ -158,7 +164,7 @@
   }
 }
 
-/* Medium and smaller screens */
+/* Medium and small screens */
 @media (max-width: 991.98px) {
   .hero-section {
     text-align: center;
@@ -167,18 +173,6 @@
 
   .hero-content {
     text-align: center;
-  }
-
-  .hero-content h1 {
-    font-size: 38px;
-  }
-
-  .hero-content p {
-    font-size: 16px;
-  }
-
-  .store-buttons img {
-    margin-bottom: 10px;
   }
 
   .hero-img-wrapper {
