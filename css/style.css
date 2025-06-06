@@ -112,8 +112,12 @@
 .hero-section {
   background: radial-gradient(96.67% 157.02% at 96.67% 105.65%, #8EAF39 5.53%, #3CA5DF 54.02%, #357FB7 88.68%);
   color: white;
-  padding-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 0;
   overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .hero-content {
@@ -121,20 +125,20 @@
 }
 
 .hero-content h1 {
-  font-size: clamp(36px, 4vw, 72px); /* text grows on big screens */
+  font-size: clamp(36px, 5vw, 80px);
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
 .hero-content p {
-  font-size: clamp(16px, 2vw, 28px); /* paragraph grows too */
+  font-size: clamp(16px, 2.5vw, 30px);
   color: #d2e5ff;
   line-height: 1.5;
 }
 
 .store-buttons img {
-  height: clamp(40px, 5vw, 60px); /* button icons grow */
+  height: clamp(40px, 4vw, 65px);
   margin-right: 10px;
 }
 
@@ -144,39 +148,63 @@
   align-items: flex-start;
   overflow: hidden;
   position: relative;
+  max-height: 600px;
   height: auto;
-  max-height: 500px; /* Limit wrapper height for cropping */
 }
 
 .hero-phone {
   width: 100%;
-  max-width: clamp(300px, 40vw, 520px);
-  transform: translateY(0px); 
+  max-width: clamp(300px, 45vw, 580px);
+  transform: translateY(0);
 }
 
 
+/* ✅ For laptop-size screens: reduce font + image size */
+@media (min-width: 1024px) and (max-width: 1399.98px) {
+  .hero-content h1 {
+    font-size: 52px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .store-buttons img {
+    height: 45px;
+  }
+
+  .hero-phone {
+    max-width: 510px;
+  }
+}
 
 
-/* Extra large screens */
+/* ✅ For extra large screens: everything larger */
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
   }
 
   .hero-content {
-    max-width: 600px;
+    max-width: 650px;
   }
 
   .hero-img-wrapper {
     justify-content: flex-end;
   }
+
+  .hero-phone {
+    transform: translateY(50px); /* crop bottom slightly */
+  }
 }
 
-/* Medium and small screens */
+
+/* ✅ Medium and small screens */
 @media (max-width: 991.98px) {
   .hero-section {
     text-align: center;
     padding: 60px 20px;
+    flex-direction: column;
   }
 
   .hero-content {
@@ -186,6 +214,11 @@
   .hero-img-wrapper {
     margin-top: 30px;
     justify-content: center;
+    max-height: none;
+  }
+
+  .hero-phone {
+    transform: none;
   }
 }
 
