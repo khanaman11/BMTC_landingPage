@@ -192,7 +192,7 @@
 
   .hero-img-wrapper {
     justify-content: flex-end;
-    height: 700px;           /* ✅ fix wrapper height */
+    height: 800px;           /* ✅ fix wrapper height */
     overflow: hidden;        /* ✅ anything extra will be cropped */
   }
 
