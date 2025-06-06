@@ -178,13 +178,11 @@
   }
 }
 
-
-/* ✅ For extra large screens: everything larger */
 /* ✅ For extra large screens: everything larger */
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
-    padding-top:40px ;
+    padding-top: 40px;
   }
 
   .hero-content {
@@ -193,14 +191,17 @@
 
   .hero-img-wrapper {
     justify-content: flex-end;
-    height:100%;           /* ✅ fix wrapper height */
-    overflow: hidden;        /* ✅ anything extra will be cropped */
+    height: 520px;         /* ✅ fixed height for wrapper */
+    align-items: flex-start;
+    overflow: hidden;      /* ✅ crop bottom */
   }
 
   .hero-phone {
-    transform: translateY(-90px); /* ✅ push image down to crop bottom */
+    transform: translateY(40px);  /* ✅ push image slightly down to crop bottom only */
+    max-height: none;
   }
 }
+
 
 
 
