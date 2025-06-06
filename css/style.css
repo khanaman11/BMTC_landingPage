@@ -112,7 +112,7 @@
 .hero-section {
   background: radial-gradient(96.67% 157.02% at 96.67% 105.65%, #8EAF39 5.53%, #3CA5DF 54.02%, #357FB7 88.68%);
   color: white;
-  padding: 80px 0;
+  padding-top: 60px;
   overflow: hidden;
 }
 
@@ -141,13 +141,21 @@
 .hero-img-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  max-height: 500px; /* Limit wrapper height for cropping */
 }
 
 .hero-phone {
   width: 100%;
-  max-width: clamp(280px, 40vw, 520px); /* image grows on big screen */
+  max-width: clamp(300px, 40vw, 520px);
+  transform: translateY(0px); 
 }
+
+
+
 
 /* Extra large screens */
 @media (min-width: 1400px) {
