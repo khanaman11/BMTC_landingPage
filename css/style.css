@@ -115,7 +115,7 @@
   padding-top: 30px;
   padding-bottom: 0;
   overflow: hidden;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   align-items: center;
 }
@@ -197,7 +197,7 @@
   }
 
   .hero-phone {
-    transform: translateY(0px); /* 👈 Push image down so bottom gets cropped */
+    transform: translateY(80px); /* 👈 Push image down so bottom gets cropped */
   }
 }
 
