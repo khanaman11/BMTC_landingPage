@@ -180,6 +180,7 @@
 
 
 /* ✅ For extra large screens: everything larger */
+/* ✅ For extra large screens: everything larger */
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
@@ -191,10 +192,12 @@
 
   .hero-img-wrapper {
     justify-content: flex-end;
+    max-height: 500px;  /* 👈 Ensure height restriction */
+    overflow: hidden;   /* 👈 Important for cropping */
   }
 
   .hero-phone {
-    transform: translateY(50px); /* crop bottom slightly */
+    transform: translateY(80px); /* 👈 Push image down so bottom gets cropped */
   }
 }
 
