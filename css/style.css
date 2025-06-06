@@ -115,7 +115,7 @@
   padding-top: 30px;
   padding-bottom: 0;
   overflow: hidden;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -192,7 +192,7 @@
 
   .hero-img-wrapper {
     justify-content: flex-end;
-    height: 520px;           /* ✅ fix wrapper height */
+    height: 700px;           /* ✅ fix wrapper height */
     overflow: hidden;        /* ✅ anything extra will be cropped */
   }
 
