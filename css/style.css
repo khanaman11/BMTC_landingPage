@@ -191,16 +191,38 @@
 
   .hero-img-wrapper {
     justify-content: flex-end;
-    height: 520px;         /* ✅ fixed height for wrapper */
-    align-items: flex-start;
-    overflow: hidden;      /* ✅ crop bottom */
+    height: 520px;              /* ✅ Fixed height to allow bottom cropping */
+    align-items: flex-start;    /* ✅ Align image to top */
+    overflow: hidden;           /* ✅ Crop overflow from bottom */
   }
 
   .hero-phone {
-    transform: translateY(40px);  /* ✅ push image slightly down to crop bottom only */
     max-height: none;
+    transform: translateY(40px); /* ✅ Push image down slightly for bottom crop */
   }
 }
+
+/* ✅ Optional: Apply same style even on very large screens (1600px, 1800px, etc.) */
+@media (min-width: 1600px) {
+  .hero-img-wrapper {
+    height: 540px;
+  }
+
+  .hero-phone {
+    transform: translateY(50px); /* Slightly more push on ultra-wide screens */
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-img-wrapper {
+    height: 580px;
+  }
+
+  .hero-phone {
+    transform: translateY(60px); /* Adjusted for larger screens */
+  }
+}
+
 
 
 
