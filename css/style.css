@@ -158,7 +158,12 @@
   transform: translateY(0);
 }
 
-
+@media(max-width:768px){
+  .store-buttons{
+    display: flex;
+    justify-content: center !important;
+  }
+}
 /* ✅ For laptop-size screens: reduce font + image size */
 @media (min-width: 1024px) and (max-width: 1399.98px) {
   .hero-content h1 {
@@ -248,6 +253,7 @@
   .hero-phone {
     transform: none;
   }
+ 
 }
 
 
