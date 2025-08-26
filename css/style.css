@@ -109,152 +109,194 @@
 
 
  /* hero section start */
-.hero-section {
-  background: radial-gradient(96.67% 157.02% at 96.67% 105.65%, #8EAF39 5.53%, #3CA5DF 54.02%, #357FB7 88.68%);
-  color: white;
-  padding-top: 30px;
-  padding-bottom: 0;
-  overflow: hidden;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
+ .hero-section {
+   background: radial-gradient(96.67% 157.02% at 96.67% 105.65%, #8EAF39 5.53%, #3CA5DF 54.02%, #357FB7 88.68%);
+   color: white;
+   padding-top: 30px;
+   padding-bottom: 0;
+   overflow: hidden;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+ }
 
-.hero-content {
-  text-align: left;
-}
+ .hero-content {
+   text-align: left;
+ }
 
-.hero-content h1 {
-  font-size: clamp(36px, 5vw, 80px);
-  font-weight: 700;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
+ .hero-content h1 {
+   font-size: clamp(36px, 5vw, 80px);
+   font-weight: 700;
+   margin-bottom: 20px;
+   line-height: 1.2;
+ }
 
-.hero-content p {
-  font-size: clamp(16px, 2.5vw, 30px);
-  color: #d2e5ff;
-  line-height: 1.5;
-}
+ .hero-content p {
+   font-size: clamp(16px, 2.5vw, 30px);
+   color: #d2e5ff;
+   line-height: 1.5;
+ }
 
-.store-buttons img {
-  height: clamp(40px, 4vw, 65px);
-  margin-right: 10px;
-}
+ .store-buttons img {
+   height: clamp(40px, 4vw, 65px);
+   margin-right: 10px;
+ }
 
-.hero-img-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  overflow: hidden;
-  position: relative;
-  max-height: 600px;
-  height: auto;
-}
+ .hero-img-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   overflow: hidden;
+   position: relative;
+   max-height: 600px;
+   height: auto;
+ }
 
-.hero-phone {
-  width: 100%;
-  max-width: clamp(300px, 45vw, 580px);
-  transform: translateY(0);
-}
+ .hero-phone {
+   width: 100%;
+   max-width: clamp(300px, 45vw, 580px);
+   transform: translateY(0);
+ }
 
-@media(max-width:768px){
-  .store-buttons{
-    display: flex;
-    justify-content: center !important;
-  }
-}
-/* ✅ For laptop-size screens: reduce font + image size */
-@media (min-width: 1024px) and (max-width: 1399.98px) {
-  .hero-content h1 {
-    font-size: 52px;
-  }
+ .book-demo {
+   background-color: #a0cc45;
+   color: white;
+   font-weight: 500;
+   padding: 6px 18px;
+   border-radius: 5px;
+   font-size: 14px;
+   border: none;
+ }
 
-  .hero-content p {
-    font-size: 18px;
-  }
+ .book-demo:hover {
+   background-color: #a0cc45;
+   color: white;
+ }
 
-  .store-buttons img {
-    height: 45px;
-  }
+ .contact-us {
+   border: 1px solid #7ab839;
+   color: #fff;
+   font-weight: 500;
+   background-color: transparent;
+   padding: 5px 15px;
+   border-radius: 5px;
+   font-size: 14px;
+ }
 
-  .hero-phone {
-    max-width: 510px;
-  }
-}
+ .contact-us:hover {
+   border: 1px solid #fff;
+   color: #fff;
+ }
 
-/* ✅ For extra large screens: everything larger */
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-    padding-top: 40px;
-  }
+ @media(max-width:768px) {
+   .store-buttons {
+     display: flex;
+     justify-content: center !important;
+   }
 
-  .hero-content {
-    max-width: 650px;
-  }
+   .contact-us{
+     border: 1px solid #fff;
+     color: #fff;
+   }
+ }
 
-  .hero-img-wrapper {
-    justify-content: flex-end;
-    height: 520px;              /* ✅ Fixed height to allow bottom cropping */
-    align-items: flex-start;    /* ✅ Align image to top */
-    overflow: hidden;           /* ✅ Crop overflow from bottom */
-  }
+ /* ✅ For laptop-size screens: reduce font + image size */
+ @media (min-width: 1024px) and (max-width: 1399.98px) {
+   .hero-content h1 {
+     font-size: 52px;
+   }
 
-  .hero-phone {
-    max-height: none;
-    transform: translateY(40px); /* ✅ Push image down slightly for bottom crop */
-  }
-}
+   .hero-content p {
+     font-size: 18px;
+   }
 
-/* ✅ Optional: Apply same style even on very large screens (1600px, 1800px, etc.) */
-@media (min-width: 1600px) {
-  .hero-img-wrapper {
-    height: 540px;
-  }
+   .store-buttons img {
+     height: 45px;
+   }
 
-  .hero-phone {
-    transform: translateY(50px); /* Slightly more push on ultra-wide screens */
-  }
-}
+   .hero-phone {
+     max-width: 510px;
+   }
+ }
 
-@media (min-width: 1920px) {
-  .hero-img-wrapper {
-    height: 580px;
-  }
+ /* ✅ For extra large screens: everything larger */
+ @media (min-width: 1400px) {
+   .container {
+     max-width: 1320px;
+     padding-top: 40px;
+   }
 
-  .hero-phone {
-    transform: translateY(60px); /* Adjusted for larger screens */
-  }
-}
+   .hero-content {
+     max-width: 650px;
+   }
+
+   .hero-img-wrapper {
+     justify-content: flex-end;
+     height: 520px;
+     /* ✅ Fixed height to allow bottom cropping */
+     align-items: flex-start;
+     /* ✅ Align image to top */
+     overflow: hidden;
+     /* ✅ Crop overflow from bottom */
+   }
+
+   .hero-phone {
+     max-height: none;
+     transform: translateY(40px);
+     /* ✅ Push image down slightly for bottom crop */
+   }
+ }
+
+ /* ✅ Optional: Apply same style even on very large screens (1600px, 1800px, etc.) */
+ @media (min-width: 1600px) {
+   .hero-img-wrapper {
+     height: 540px;
+   }
+
+   .hero-phone {
+     transform: translateY(50px);
+     /* Slightly more push on ultra-wide screens */
+   }
+ }
+
+ @media (min-width: 1920px) {
+   .hero-img-wrapper {
+     height: 580px;
+   }
+
+   .hero-phone {
+     transform: translateY(60px);
+     /* Adjusted for larger screens */
+   }
+ }
 
 
 
 
 
-/* ✅ Medium and small screens */
-@media (max-width: 991.98px) {
-  .hero-section {
-    text-align: center;
-    padding: 60px 20px;
-    flex-direction: column;
-  }
+ /* ✅ Medium and small screens */
+ @media (max-width: 991.98px) {
+   .hero-section {
+     text-align: center;
+     padding: 60px 20px;
+     flex-direction: column;
+   }
 
-  .hero-content {
-    text-align: center;
-  }
+   .hero-content {
+     text-align: center;
+   }
 
-  .hero-img-wrapper {
-    margin-top: 30px;
-    justify-content: center;
-    max-height: none;
-  }
+   .hero-img-wrapper {
+     margin-top: 30px;
+     justify-content: center;
+     max-height: none;
+   }
 
-  .hero-phone {
-    transform: none;
-  }
- 
-}
+   .hero-phone {
+     transform: none;
+   }
+
+ }
 
 
  /* Hero section end */
